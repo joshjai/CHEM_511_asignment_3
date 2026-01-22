@@ -18,7 +18,7 @@ while True:
     maximum = reading
     minimum = reading
     lcd.move_to(0, 0)
-    lcd.putstr('reading: %d ' % reading)
+    lcd.putstr('reading: %d  ' % reading)
     time.sleep(1)
     
     
