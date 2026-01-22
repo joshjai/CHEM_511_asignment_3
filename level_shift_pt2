@@ -17,14 +17,14 @@ while True:
   
     new_reading = potentiometer.read()
     lcd.move_to(0,0)
-    lcd.putstr('reading: %d ' % new_reading)
+    lcd.putstr('reading: %d  ' % new_reading)
     if new_reading > old_max:
         lcd.move_to(0,1)
         lcd.putstr(f'mx {new_reading}')
         old_max = new_reading
     if new_reading < old_min:
         lcd.move_to(8,1)
-        lcd.putstr(f'mn {new_reading}')
+        lcd.putstr(f'mn {new_reading}  ')
         old_min = new_reading
         
     time.sleep(1)
